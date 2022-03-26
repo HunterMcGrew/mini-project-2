@@ -11,60 +11,154 @@
 </head>
 <body>
 
+<!-- Page Header -->
     <header class="main-header">
-        <h1>CSS Snippet Cheatsheet</h1>
-        <h5>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a premanent home and add it to this page! Select any snippet below and it'll automatically selelct all of the code for you to copy.</h5>
+        <div class="header">
+            <h1>CSS Snippet Cheatsheet</h1>
+        </div>
+        <div class="header2">
+            <h5>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a premanent home and add it to this page! Select any snippet below and it'll automatically selelct all of the code for you to copy.</h5>
+        </div>
     </header>
+<!-- End Page Header-->
 
-    <main>
+<!-- Begin Main Body -->
+    <main class="flexbox-container">
 
-        <section class="row">
-            <header>Flexbox Row</header>
-            <p>Use these three properties to create a Flexbox row layout.</p>
+<!-- First Box -->
+        <section class="card card1">
+            <div class="card-header">
+                <header>Flexbox Row</header>
+            </div>
+                <div class="card-body">
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .row { <br>
+                                display: flex; <br>
+                                flex-direction: row; <br>
+                                flex-wrap: wrap; <br>
+                            }
+                        </code>
+                    </div> 
             
         </section>
+<!-- End First Box -->
 
-        <section class="row">
-            <header>Flexbox Column</header>
-            <p>Use this to create a Flexbox layout.</p>
-            
+<!-- Second Box -->
+        <section class="card card2">
+            <div class="card-header">
+                <header>Flexbox Column</header>
+            </div>
+                <div class="card-body">
+                    <p>Use this to create a Flexbox layout.</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .column { <br>
+                                display: flex; <br>
+                                flex-direction: column <br>
+                            }
+                        </code>
+                    </div>
+    
         </section>
+<!-- End Second Box -->
 
-        <section class="row">
-            <header>CSS Grid Layout</header>
-            <p>Build a 12-column layout u sing CSS Grid</p>
+<!-- Third Box -->
+        <section class="card card3">
+            <div class="card-header">
+                <header>CSS Grid Layout</header>
+            </div>
+                <div class="card-body">
+                    <p>Build a 12-column layout u sing CSS Grid</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .grid { <br>
+                                display: grid; <br>
+                                width: 100%; <br>
+                                grid-template-columns: repeat(12, 1fr); <br>
+                            }
+                        </code>
+                    </div>
             </section>
+<!-- End Third Box -->
 
-        <section class="row">
-            <div class="header-div">
+<!-- Fourth Box -->
+        <section class="card card4">
+            <div class="card-header">
                 <header>Linear Gradients</header>
             </div>
-                <p>This will create a background linear gradient from top to bottom.</p>
+                <div class="card-body">
+                    <p>This will create a background linear gradient from top to bottom.</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .linear-gradient-background { <br>
+                                background-image: linear-gradient( <br>
+                                    rgba(232, 102, 236, 0.3) 0%, <br>
+                                    rgba(232, 102, 236, 0.6) 100% <br>
+                                    ); <br>
+                                }
+                        </code>
+                    </div>
         </section>
+<!-- End Fourth Box -->
 
-        <section class="row">
-            <header>Box Transition Glow</header>
-            <p>Use transition and box shadow to glow on hover.</p>
+<!-- Fifth Box -->
+        <section class="card card5">
+            <div class="card-header">
+                <header>Box Transition Glow</header>
+            </div>
+                <div class="card-body">
+                    <p>Use transition and box shadow to glow on hover.</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .code-card .card-header { <br>
+                                border-radius: 8px; <br>
+                                transition: all 0.5s ease-in-out; <br>
+                            } <br>
+                        </code>
+                    </div>
+
         </section>
+<!-- End Fifth Box -->
 
-        <section class="row">
-            <header>Overlay Card with Title</header>
-            <p>Use posotion properties and negative margins to reaise elements higher than their natural starting point.</p>
+<!-- Sixth Box -->
+        <section class="card card6">
+            <div class="card-header">
+                <header>Overlay Card with Title</header>
+            </div>
+                <div class="card-body">
+                    <p>Use posotion properties and negative margins to reaise elements higher than their natural starting point.</p>
+                </div>
+                    <div class="linear-gradient-background">
+                        <code class="code">
+                            .card-header { <br>
+                                position: relative; <br>
+                                martin-top-20px; <br>
+                            }
+                        </code>
+                    </div>
+
         </section>
-
-        
-
+<!-- End Sixth Box -->
+    
     </main>
+<!-- End Main Body -->
 
 <!-- 
     use <div>'s inside sections with justify-center class. div being card-colum, div holding paragraph, div holding code tag.
     3 flexboxes each so everything is very responsive
 
 -->
+        <footer class="footer">
+            <h2>Made with ❤️ and CSS</h2>
+        </footer>
 
-    <footer>
-        <h2>Made with and CSS</h2>
-    </footer>
     
 </body>
 </html>
